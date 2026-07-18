@@ -30,7 +30,7 @@ jobs:
         run: python scripts/fetch_contributions.py
 
       - name: Render animated contribution graph SVG
-        run: python scripts/generate_streak_svg.py AVIVASHISHTA29 contrib-heatmap.svg
+        run: python scripts/render_heatmap_svg.py
 
       - name: Commit updated art
         uses: stefanzweifel/git-auto-commit-action@v5
